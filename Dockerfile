@@ -1,6 +1,6 @@
 FROM centos:centos6
 
-MAINTAINER Naoki AINOYA <ainonic@gmail.com>
+MAINTAINER prevs-io
 
 WORKDIR /tmp
 
@@ -32,7 +32,7 @@ RUN /usr/local/bin/ruby-build 2.1.2 /opt/ruby-2.1.2
 RUN ln -s /opt/ruby-2.1.2/bin/ruby /usr/local/bin/ruby
 
 # Install mod_mruby
-RUN git clone https://github.com/matsumoto-r/mod_mruby.git /tmp/mod_mruby
+RUN git clone https://github.com/prevs-io/mod_mruby.git /tmp/mod_mruby
 WORKDIR /tmp/mod_mruby
 RUN chmod u+x ./build.sh
 RUN ./build.sh

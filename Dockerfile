@@ -4,7 +4,8 @@ MAINTAINER prevs-io
 
 WORKDIR /tmp
 
-RUN rpm -ivh http://ftp-srv2.kddilabs.jp/Linux/distributions/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
+# Add EPEL
+RUN yum install -y epel-release
 
 RUN export PATH=$PATH:/usr/local/bin
 

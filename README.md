@@ -1,4 +1,4 @@
-docker-apache-mod_mruby
+docker-pool-base
 =======================
 
 Dockerfile creates image include apache/mod_mruby stack.
@@ -7,7 +7,7 @@ Dockerfile creates image include apache/mod_mruby stack.
 
 If you just run sixpack with docker, you can use trusted builds registered [Docker index][di],
 
-    docker pull ainoya/apache-mod-mruby
+    docker pull prevs/pool-base
 
 
 ## Reference

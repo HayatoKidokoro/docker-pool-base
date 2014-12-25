@@ -49,7 +49,7 @@ RUN ln -s /opt/ruby-2.1.2/bin/ruby /usr/local/bin/ruby
 # Install mod_mruby
 RUN git clone https://github.com/prevs-io/mod_mruby.git /tmp/mod_mruby
 WORKDIR /tmp/mod_mruby
-ADD config/build_config.rb .
+COPY config/build_config.rb /tmp/mod_mruby/
 RUN chmod u+x ./build.sh
 RUN ./build.sh
 RUN make install

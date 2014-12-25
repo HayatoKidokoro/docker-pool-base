@@ -7,7 +7,7 @@ Dockerfile creates image include apache/mod_mruby stack.
 
 If you just run sixpack with docker, you can use trusted builds registered [Docker index][di],
 
-    docker pull prevs/pool-base
+    docker pull prevsio/pool-base
 
 
 ## Reference
